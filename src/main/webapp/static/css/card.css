@@ -1,0 +1,79 @@
+.cards--container {
+    width: 612px;
+    height: 344px;
+    margin-top: 107px;
+    margin-left: 375px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    align-content: flex-end;
+}
+
+.card {
+    margin: 7px 7px;
+    height: 165px;
+    box-shadow: 2px 2px 2px #00000057;
+    position: relative;
+    border: 1m solid #FFFFFF;
+    background: padding-box #1464BE63;
+}
+.card--small-width{
+    width: 190px;
+}
+.card--large-width{
+    width: 292px;
+}
+.card:hover{
+    transform: scale(1.1,1.1);
+    transition: 0.3s;
+}
+.card-disp{
+    height: 165px;
+    position: relative;
+}
+.card-disp--small-size{
+    width: 190px;
+}
+.card-disp--large-size{
+    width: 292px;
+}
+.card--icon {
+    color: black;
+    font-size: 80px;
+    position: absolute;
+}
+.card--icon--small-size {
+    margin: 25px 50px;
+}
+.card--icon--large-size {
+    margin: 25px 90px;
+}
+
+.card--title {
+    height: 35px;
+    margin-top: -35px;
+    background: #1464BE;
+    position: absolute;
+}
+.card--title--small-size{
+    width: 190px;
+}
+.card--title--large-size{
+    width: 292px;
+}
+.card--title-text {
+    color: white;
+    font-size: x-large;
+    position: absolute;
+    margin-top: 4px;
+}
+.card--title-text-small{
+    margin-left: 60px;
+}
+.card--title-text-large{
+    margin-left: 110px;
+}

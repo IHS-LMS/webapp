@@ -1,0 +1,32 @@
+.dashboard-back-icon {
+    color: white;
+    font-size: 40px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+/* student-list */
+.back-symbol {
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    border: 2px solid white;
+    border-top: none;
+    border-right: none;
+    position: relative;
+    top: -4px;
+    transform: rotate(45deg);
+}
+
+/*Student list */
+
+.search-icon {
+    position: absolute;
+    right: 2.5%;
+    top: 92px;
+    color: #1464BE;
+}
+
+.search-icon:hover {
+    color: black;
+}
