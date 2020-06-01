@@ -15,4 +15,24 @@ public class MainController {
     public String dashboard() {    
       return "dashboard";
     }
+    @RequestMapping(value = "/faculty", method = RequestMethod.GET)
+    public String faculty() {    
+      return "dashboard";
+    }
+    @RequestMapping(value = "/employee", method = RequestMethod.GET)
+    public String employee() {    
+      return "dashboard";
+    }
+    @RequestMapping(value = "/report", method = RequestMethod.GET)
+    public String report() {    
+      return "dashboard";
+    }
+    @RequestMapping(value = "/student", method = RequestMethod.GET)
+    public String student() {    
+      return "dashboard";
+    }
+    @RequestMapping(value = "/hostel", method = RequestMethod.GET)
+    public String hostel() {    
+      return "dashboard";
+    }
 }
