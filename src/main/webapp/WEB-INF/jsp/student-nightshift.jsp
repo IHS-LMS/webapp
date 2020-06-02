@@ -13,15 +13,11 @@
     <jsp:include page="nb-faculty.jsp"></jsp:include>
 
     <div id="content">
-
         <section>
             <h1>Add Night Shift Group ></h1>
         </section>
-
         <form action="#" method="post" onSubmit="return ">
-
             <main id="main">
-
                 <div>
                     <h2>Select Teacher</h2>
                     <br>
@@ -63,10 +59,8 @@
                     <input type="date" ID="date" id="" required>
 
                     <div style="margin: 0; margin-top: 30px;  display: flex; justify-content: space-around;">
-
                         <button type="submit" class="button-style">Save</button>
                         <button type="reset" class="button-style" id="btn-clear">Cancel</button>
-
                     </div>
                 </div>
 
@@ -74,41 +68,9 @@
 
         </form>
 
-        <aside>
-
-            <div>
-                <p>Notification</p>
-                <p>Lorem ndis labore quod eligendi obcaecati animi pariatur nostrum eius consequatur blanditiis corporis
-                    aperiam culpa ad aliquid atque inventore, maiores dolores perspiciatis.</p>
-                <p>Lorem, ip commodi rem corrupti saepe voluptatibus repellendus pariatur doloribus quis nobis
-                    consequuntur fugiat? Tempore cumque autem culpa quod, impedit repellat et aut!</p>
-                <p>Lorem ipstam quas doibero reprehenderit tempora porro explicabo ea doloribus molestiae enim.</p>
-            </div>
-
-            <p style="margin: 0 0 0 10px; position: fixed; bottom: 50px; color: white;">Powered By: CodeX</p>
-
-            <div>
-                <a href="">
-                    <i class="fab fa-facebook" style="font-size: 20px;"></i>
-                </a>
-                <a href="">
-                    <i class="fab fa-twitter" style="font-size: 20px;"></i>
-                </a>
-                <a href="">
-                    <i class="fab fa-linkedin" style="font-size: 20px;"></i>
-                </a>
-                <a href="">
-                    <i class="fab fa-whatsapp" style="font-size: 20px;"></i>
-                </a>
-                <a href="">
-                    <i class="fab fa-instagram" style="font-size: 20px;"></i>
-                </a>
-            </div>
-
-        </aside>
+        <jsp:include page="sidebar.jsp"></jsp:include>
 
     </div>
     <script src="/static/js/script.js"></script>
 </body>
-
 </html>
