@@ -13,7 +13,7 @@
 <body>
     <nav>
         <i class="fas fa-chevron-left dashboard-back-icon" onClick="location.href='/'"></i>
-        <p onClick="location.href='/'">Dashboard</p>
+        <p onClick="location.href='/'">Welcome</p>
     </nav>
     <div class="cards--container">
         <a onClick="location.href='/faculty'">
