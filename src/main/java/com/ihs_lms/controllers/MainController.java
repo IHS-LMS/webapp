@@ -33,7 +33,7 @@ public class MainController {
     }
     @RequestMapping(value = "/faculty/timetable", method = RequestMethod.GET)
     public String timetable() {    
-      return "timetable";
+      return "course-timetable";
     }
     @RequestMapping(value = "/faculty/exam-timetable", method = RequestMethod.GET)
     public String exam_timetable() {    
