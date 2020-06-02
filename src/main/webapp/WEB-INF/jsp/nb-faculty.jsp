@@ -1,6 +1,6 @@
 <nav>
     <ul>
-        <li><a onClick="location.href='/'" style="border: none;">health institute</a></li>
+        <li><a onClick="location.href='/dashboard'" style="border: none;">health institute</a></li>
         <div>
             <li><a onClick="location.href='/faculty'" style="background: white; border-radius: 20px;  color: #1464BE;">Add
                     Faculty</a></li>

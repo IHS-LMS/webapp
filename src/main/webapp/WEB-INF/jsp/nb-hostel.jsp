@@ -1,6 +1,6 @@
 <nav>
     <ul>
-        <li><a onClick="location.href='/'" style="border: none;">health institute</a></li>
+        <li><a onClick="location.href='/dashboard'" style="border: none;">health institute</a></li>
         <div>
             <li><a onClick="location.href='/hostel'">Add Hostel</a></li>
             <li><a onClick="location.href='/hostel/room'">Add Room</a></li>

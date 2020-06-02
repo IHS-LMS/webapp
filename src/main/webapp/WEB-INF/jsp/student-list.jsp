@@ -13,7 +13,7 @@
     <div id="dash-header">
         <header id="nav-dashboard">
             <h1 class="heading-style">
-                <a onClick="location.href='/'" style="text-decoration: none; color: white;">
+                <a onClick="location.href='/dashboard'" style="text-decoration: none; color: white;">
                     <div class="back-symbol"></div>
                     BACK TO DASHBOARD
                 </a>
