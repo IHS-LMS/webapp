@@ -15,7 +15,7 @@
     <div class="slideshow">
         <img name="slide" class="slideshow--photos">
         <div class="nav-bar">
-            <p class="nav-bar-title" onClick="location.href='/login'">Welcome</p>
+            <p class="nav-bar-title" onClick="location.href='/dashboard'">Welcome</p>
         </div>
     </div>
     <div class="body--top-students">
