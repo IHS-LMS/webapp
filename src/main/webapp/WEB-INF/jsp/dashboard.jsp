@@ -28,7 +28,7 @@
                 </div>
             </div>
         </a>
-        <a onClick="location.href='/employee'">
+        <a onClick="location.href='/staff'">
             <div class="card card--small-width">
                 <div class="card-disp card-disp--small-size">
                     <i class="fas fa-chalkboard-teacher card--icon card--icon--small-size"></i>
