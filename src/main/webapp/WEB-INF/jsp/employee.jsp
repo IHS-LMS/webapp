@@ -1,0 +1,144 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="https://kit.fontawesome.com/3c03c97ac7.js" crossorigin="anonymous"></script>
+    <title>Employee</title>
+</head>
+
+<body>
+    <jsp:include page="nb-staff.jsp"></jsp:include>
+
+    <div id="content">
+
+        <section>
+            <h1 style="margin-bottom: 713px;">Add Employee info ></h1>
+            <h1>Add Employee Address ></h1>
+        </section>
+
+        <form action="#" method="post">
+
+            <main id="main">
+
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="" pattern="[A-Za-z- ]+" required>
+                    <label for="Father Name">Last_Name</label>
+                    <!-- <input type="text" name="Last_name" id="" pattern="[A-Za-z- ]+" required>
+                    <label for="GrandFather Name">GrandFather_Name</label> -->
+                    <input type="text" name="GrandFather_Name" id="" pattern="[A-Za-z- ]+" required>
+                    <label for="Gender">Gender</label>
+                    <select name="Gender" id="">
+                        <option value="Select">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <label for="DOB">DOB</label>
+                    <input type="date" name="DOB" id="" required>
+                    <label for="POB">POB</label>
+                    <input type="text" name="POB" id="" pattern="[A-Za-z- ]+" required>
+                    <label for="NativeLanguage">Native_Language</label>
+                    <select name="NativeLanguage" id="" required>
+                        <option value="Select">Select</option>
+                        <option value="pashto">Pashto</option>
+                        <option value="dari">Dari</option>
+                        <option value="uzbaki">Uzbaki</option>
+                    </select>
+                    <label for="Nationality">Nationality</label>
+                    <select name="Nationality" id="" required>
+                        <option value="Select">Select</option>
+                        <option value="pashtoon">Pashtoon</option>
+                        <option value="tajik">Tajik</option>
+                        <option value="hazara">Hazara</option>
+                        <option value="uzbek">Uzbek</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <label for="NID">Tazkira_Number</label>
+                    <input type="text" name="NID" id="" pattern="[0-9]+" required>
+                    <label for=" CellPhone"> Cell_Phone</label>
+                    <input type="text" name=" CellPhone" id="" pattern="[0-9]+" required>
+                    <label for="Email">Email</label>
+                    <input type="email" name="Email" id="" required>
+                    <label for="HireDate">Hire_Date</label>
+                    <input type="text" name="HireDate" id="" required>
+                    <hr>
+                    <label for=" Province"> Province</label>
+                    <select name="Province" id="" required>
+                        <option value="Select">Select</option>
+                        <option value="Kandahar">Kandahar</option>
+                        <option value="Kabul">Kabul</option>
+                        <option value="Herat">Herat</option>
+                        <option value="Mazar">Mazar</option>
+                        <option value="Nimruz">Nimruz</option>
+                        <option value="Helmand">Helmand</option>
+                        <option value="Farah">Farah</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <label for="District"> District </label>
+                    <input type="number" name="District" id="" pattern="[0-9]+" required>
+                    <label for="StreetNo">StreetNo</label>
+                    <input type="number" name="StreetNo" id="" pattern="[0-9]+" required>
+                    <label for="HouseNo">HouseNo</label>
+                    <input type="number" name="HouseNo" id="" pattern="[0-9]+" required>
+
+                    <div style="margin: 0; margin-top: 30px;  display: flex; justify-content: space-around;">
+
+                        <button type="submit" class="button-style">Save</button>
+                        <button type="reset" class="button-style" id="btn-clear">Cancel</button>
+
+                    </div>
+                </div>
+                <div>
+                    <label for=" photo">Photo</label>
+                    <div>
+                        <img src="" id="photo" alt="" class="photo" style=" margin-left: 0px; ">
+                    </div>
+                    <input type="file" onchange="loadFile(event)" name="photo" id="select-photo-button"
+                        value="Select Photo" style="outline: none;">
+                </div>
+
+            </main>
+
+        </form>
+
+        <aside>
+
+            <div>
+                <p>Notification</p>
+                <p>Lorem ndis labore quod eligendi obcaecati animi pariatur nostrum eius consequatur blanditiis corporis
+                    aperiam culpa ad aliquid atque inventore, maiores dolores perspiciatis.</p>
+                <p>Lorem, ip commodi rem corrupti saepe voluptatibus repellendus pariatur doloribus quis nobis
+                    consequuntur fugiat? Tempore cumque autem culpa quod, impedit repellat et aut!</p>
+                <p>Lorem ipstam quas doibero reprehenderit tempora porro explicabo ea doloribus molestiae enim.</p>
+            </div>
+
+            <p style="margin: 0 0 0 10px; position: fixed; bottom: 50px; color: white;">Powered By: CodeX</p>
+
+            <div>
+                <a href="">
+                    <i class="fab fa-facebook" style="font-size: 20px;"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-twitter" style="font-size: 20px;"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-linkedin" style="font-size: 20px;"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-whatsapp" style="font-size: 20px;"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-instagram" style="font-size: 20px;"></i>
+                </a>
+            </div>
+
+        </aside>
+
+    </div>
+    <script src="/static/js/script.js"></script>
+</body>
+
+</html>
