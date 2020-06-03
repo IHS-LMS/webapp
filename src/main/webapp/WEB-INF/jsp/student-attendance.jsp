@@ -53,6 +53,7 @@
 
     </div>
     <script src="/static/js/script.js"></script>
+    <script src="/static/js/fv-student-attendance.js"></script>
 </body>
 
 </html>

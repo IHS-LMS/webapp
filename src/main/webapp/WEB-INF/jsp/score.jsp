@@ -74,7 +74,8 @@
 
         <jsp:include page="sidebar.jsp"></jsp:include>
     </div>
-    <script src="/static/js/script.js"></script>
+    <script src="/static/js/script.js"></script>    
+    <script src="/static/js/fv-student-score.js"></script>
 </body>
 
 </html>

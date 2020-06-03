@@ -149,6 +149,7 @@
 
     </div>
     <script src="/static/js/script.js"></script>
+    <script src="/static/js/fv-student.js"></script>
 </body>
 
 </html>

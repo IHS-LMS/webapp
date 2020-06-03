@@ -54,6 +54,7 @@
         </form>
 
         <jsp:include page="sidebar.jsp"></jsp:include>
+        <script src="/static/js/fv-student-job.js"></script>
 
     </div>
 </body>
