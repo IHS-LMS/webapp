@@ -18,12 +18,12 @@
             <h1>Add Hostel ></h1>
         </section>
 
-        <form action="#" method="post" onsubmit="validation()">
+        <form name="Hostel" action="#" method="post" onsubmit="return formValidation();">
             <main id="main">
 
                 <div>
                     <label for=" HostelID"> Hostel_Number</label>
-                    <input type="number" name=" HostelID" id="" required>
+                    <input type="number" name=" HostelID" id="" pattern="[0-9]+" required>
                     <label for="HostelType ">Hostel_Type </label>
                     <select name="hostelType" id="hi">
                         <option value="select">Select</option>

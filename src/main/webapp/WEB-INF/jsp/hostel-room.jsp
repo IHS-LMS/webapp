@@ -17,32 +17,32 @@
         <section>
             <h1>Add Room ></h1>
         </section>
-        <form action="#" method="post">
+        <form name="Hostel-Room" action="#" method="post" onsubmit="return formValidation();">
             <main id="main">
 
                 <div>
                     <label for=" HostelID"> Hostel_ID</label>
-                    <input type="text" name=" HostelID" id="" pattern="[0-9]+" required>
+                    <input type="number" name=" HostelID" id="" pattern="[0-9]+" required>
                     <label for="RoomNumber">Room_Number</label>
-                    <input type="text" name="RoomNumber" id="" pattern="[0-9]+" required>
+                    <input type="number" name="RoomNumber" id="" pattern="[0-9]+" required>
                     <label for="FloorNo">Floor_Number</label>
-                    <input type="text" name="FloorNo" id="" pattern="[0-9]+" required>
+                    <input type="number" name="FloorNo" id="" pattern="[0-9]+" required>
                     <label for=" Bed"> Bed</label>
-                    <input type="text" name=" Bed" id="" pattern="[0-9]+" required>
+                    <input type="number" name=" Bed" id="" pattern="[0-9]+" required>
                     <label for="Cupboard ">Cupboard </label>
-                    <input type="text" name="Cupboard" id="" pattern="[0-9]+" required>
+                    <input type="number" name="Cupboard" id="" pattern="[0-9]+" required>
                     <label for="Curtains">Curtains</label>
-                    <input type="text" name="Curtains" id="" pattern="[0-9]+" required>
+                    <input type="number" name="Curtains" id="" pattern="[0-9]+" required>
                     <label for="Fan">Fan</label>
-                    <input type="text" name="Fan" id="" pattern="[0-9]+" required>
+                    <input type="number" name="Fan" id="" pattern="[0-9]+" required>
                     <label for=" Heater"> Heater</label>
-                    <input type="text" name="Heater" id="" pattern="[0-9]+" required>
+                    <input type="number" name="Heater" id="" pattern="[0-9]+" required>
                     <label for="Blanket">Blanket</label>
-                    <input type="text" name="Blanket" id="" pattern="[0-9]+" required>
+                    <input type="number" name="Blanket" id="" pattern="[0-9]+" required>
                     <label for="Pillow ">Pillow </label>
-                    <input type="text" name="Pillow" id="" pattern="[0-9]+" required>
+                    <input type="number" name="Pillow" id="" pattern="[0-9]+" required>
                     <label for=" Carpet"> Carpet</label>
-                    <input type="text" name=" Carpet" id="" pattern="[0-9]+" required>
+                    <input type="number" name=" Carpet" id="" pattern="[0-9]+" required>
 
                     <div style="margin: 0; margin-top: 30px;  display: flex; justify-content: space-around;">
                         <button type="submit" class="button-style">Save</button>
