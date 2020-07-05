@@ -17,11 +17,11 @@
             <h1>Add Faculty ></h1>
         </section>
 
-        <form action="#" method="post">
+        <form name="faculty" action="#" method="post" onsubmit="return formValidation();">
             <main id="main">
                 <div>
-                    <label for="Faculty Name">Faculty_Name</label>
-                    <input type="text" name="faculty" id="" pattern="[A-Za-z- ]+">
+                    <label for="Faculty_Name">Faculty_Name</label>
+                    <input type="text" name="Faculty_Name" id="" pattern="[A-Za-z- ]+">
                     <div style="margin: 0; margin-top: 30px;  display: flex; justify-content: space-around;">
                         <button type="submit" class="button-style">Save</button>
                         <button type="reset" class="button-style" id="btn-clear">Cancel</button>
