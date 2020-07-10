@@ -17,12 +17,12 @@
             <h1 style="margin-bottom: 720px;">Add Teacher ></h1>
             <h1>Add Teacher Addres ></h1>
         </section>
-        <form action="#" method="post">
+        <form name="Teacher" action="#" method="post" onsubmit="return formValidation();">
             <main id="main">
                 <div>
                     <label for="name">Name</label>
                     <input type="text" name="name" id="" pattern="[A-Za-z- ]+" required>
-                    <label for="Last Name">Last_Name</label>
+                    <label for="LastName">Last_Name</label>
                     <input type="text" name="Last Name" id="" pattern="[A-Za-z- ]+" required>
                     <label for="Gender">Gender</label>
                     <select name="Gender" id="" required>
@@ -57,7 +57,7 @@
                     <input type="number" name=" CellPhone" id="" pattern="[0-9]+" required>
                     <label for="Email">Email</label>
                     <input type="email" name="Email" id="" required>
-                    <label for="Hire Date">Hire_Date</label>
+                    <label for="HireDate">Hire_Date</label>
                     <input type="date" name="Hire Date" id="" required>
                     <hr>
                     <label for=" Province"> Province</label>

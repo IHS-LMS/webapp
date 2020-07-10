@@ -1,104 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
+import { allLetter, checkSelectList, allNumber, ValidateEmail, checkFileExtension } from "validation-functions.js";
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/style.css">
-    <script src="https://kit.fontawesome.com/3c03c97ac7.js" crossorigin="anonymous"></script>
-    <title>Teacher</title>
-</head>
+function formValidation() {
+    var name = document.teacher.name;
+    var lastName = document.teacher.LastName;
+    var gender = document.teacher.Gender;
+    var DOB = document.teacher.DOB;
+    var POB = document.teacher.POB;
+    var nativeLanguage = document.teacher.NativeLanguage;
+    var nationality = document.teacher.Nationality;
+    var NID = document.teacher.NID;
+    var cellPhone = document.teacher.CellPhone;
+    var email = document.teacher.Email;
+    var hireDate = document.teacher_HireDate;
+    var Province = document.teacher.Province;
+    var district = document.teacher.District;
+    var streetNumber = document.teacher.StreetNo;
+    var houseNumber = document.teacher.HouseNo;
+    var photo = document.teacher.photo;
+    if (allLetter(name, 'teacher Name must have alphabet characters only')) {
+        if (allLetter(lastName, 'Last Name must have alphabet characters only')) {
+                if (checkSelectList(gender, 'Select Valid Gender!')) {
+                    if (DOB.value == "" ? alert('Invalid Date of Birth!') : true) {
+                        if (checkSelectList(POB, 'Insert valid Place Of Birth!')) {
+                            if (checkSelectList(nativeLanguage, 'Select Valid Native Language!')) {
+                                if (checkSelectList(nationality, 'Select Valid Nationality!')) {
+                                    if (allNumber(NID, "Invalid NID!")) {
+                                        if (allNumber(cellPhone, 'Invalidphone Number!')) {
+                                        if (ValidateEmail(email, 'You have entered an invalid email address!')) {
+                                                        if (hireDate.value == "" ? alert('Invalid Hire Date!') : true) {
+                                                                        if (checkSelectList(province, "Invalid Province!")) {
+                                                                            if (allNumber(district, 'Invalid District Number!')) {
+                                                                                if (allNumber(streetNumber, 'Invalid Street Number!')) {
+                                                                                    if (allNumber(houseNumber, 'Invalid House Number!')) {
+                                                                                        if (checkFileExtension(photo, 'Invalid photo Format!')) {
+                                                                                            alert("Form Sucessfully Submitted!");
+                                                                                            window.location.reload();
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+    return false;
 
-<body>
-    <jsp:include page="nb-staff.jsp"></jsp:include>
-
-    <div id="content">
-        <section>
-            <h1 style="margin-bottom: 720px;">Add Teacher ></h1>
-            <h1>Add Teacher Addres ></h1>
-        </section>
-        <form action="#" method="post">
-            <main id="main">
-                <div>
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="" pattern="[A-Za-z- ]+" required>
-                    <label for="Last Name">Last_Name</label>
-                    <input type="text" name="Last Name" id="" pattern="[A-Za-z- ]+" required>
-                    <label for="Gender">Gender</label>
-                    <select name="Gender" id="" required>
-                        <option value="Select">Select</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="other">Other</option>
-                    </select>
-                    <label for="DOB">DOB</label>
-                    <input type="date" name="DOB" id="" required>
-                    <label for="POB">POB</label>
-                    <input type="text" name="POB" id="" pattern="[A-Za-z- ]+" required>
-                    <label for="NativeLanguage">Native_Language</label>
-                    <select name="NativeLanguage" id="" required>
-                        <option value="Select">Select</option>
-                        <option value="pashto">Pashto</option>
-                        <option value="dari">Dari</option>
-                        <option value="uzbaki">Uzbaki</option>
-                    </select>
-                    <label for="Nationality">Nationality</label>
-                    <select name="Nationality" id="" required>
-                        <option value="Select">Select</option>
-                        <option value="pashtoon">Pashtoon</option>
-                        <option value="tajik">Tajik</option>
-                        <option value="hazara">Hazara</option>
-                        <option value="uzbek">Uzbek</option>
-                        <option value="other">Other</option>
-                    </select>
-                    <label for="NID">Tazkira_Number</label>
-                    <input type="number" name="NID" id="" pattern="[0-9]+" required>
-                    <label for=" CellPhone"> Cell_Phone</label>
-                    <input type="number" name=" CellPhone" id="" pattern="[0-9]+" required>
-                    <label for="Email">Email</label>
-                    <input type="email" name="Email" id="" required>
-                    <label for="Hire Date">Hire_Date</label>
-                    <input type="date" name="Hire Date" id="" required>
-                    <hr>
-                    <label for=" Province"> Province</label>
-                    <select name="Province" id="" required>
-                        <option value="Select">Select</option>
-                        <option value="Kandahar">Kandahar</option>
-                        <option value="Kabul">Kabul</option>
-                        <option value="Herat">Herat</option>
-                        <option value="Mazar">Mazar</option>
-                        <option value="Nimruz">Nimruz</option>
-                        <option value="Helmand">Helmand</option>
-                        <option value="Farah">Farah</option>
-                        <option value="other">Other</option>
-                    </select>
-                    <label for="District"> District </label>
-                    <input type="number" name="District" id="" pattern="[0-9]+" required>
-                    <label for="StreetNo">StreetNo</label>
-                    <input type="number" name="StreetNo" id="" pattern="[0-9]+" required>
-                    <label for="HouseNo">HouseNo</label>
-                    <input type="number" name="HouseNo" id="" pattern="[0-9]+" required>
-
-                    <div style="margin: 0; margin-top: 30px;  display: flex; justify-content: space-around;">
-                        <button type="submit" class="button-style">Save</button>
-                        <button type="reset" class="button-style" id="btn-clear">Cancel</button>
-                    </div>
-                </div>
-                <div>
-                    <label for=" photo">Photo</label>
-                    <div>
-                        <img src="" id="photo" alt="" class="photo" style=" margin-left: 0px; ">
-                    </div>
-                    <input type="file" onchange="loadFile(event)" name="photo" id="select-photo-button"
-                        value="Select Photo" style="outline: none;" required>
-                </div>
-            </main>
-        </form>
-
-        <jsp:include page="sidebar.jsp"></jsp:include>
-
-    </div>
-    <script src="/static/js/script.js"></script>
-</body>
-
-</html>
+document.teacher.onsubmit = function () {
+    formValidation();
+}
