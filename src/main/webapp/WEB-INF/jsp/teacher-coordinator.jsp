@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/style.css">
     <script src="https://kit.fontawesome.com/3c03c97ac7.js" crossorigin="anonymous"></script>
-    <title>Teacher Coordinator</title>
+    <title>Teacher_Coordinator</title>
 </head>
 
 <body>
@@ -15,16 +15,16 @@
         <section>
             <h1>Add Coordinator></h1>
         </section>
-        <form action="#" method="post">
+        <form name="Teacher Coordinator" action="#" method="post" onsubmit="return formValidation();">
             <main id="main">
                 <div>
                     <label for="Coordinate_ID">Coordinate_ID</label>
-                    <input type="text" name="Coordinate_ID" id="" pattern="[A-Za-z- ]+" required>
+                    <input type="number" name="Coordinate_ID" id="" pattern="[0-9]+" required>
                     <label for="Teacher_ID">Teacher_ID</label>
-                    <input type="text" name="Teacher_ID" id="" pattern="[A-Za-z- ]+" required>
+                    <input type="number" name="Teacher_ID" id="" pattern="[0-9]+" required>
                     <label for="Department_ID">Department_ID</label>
-                    <input type="text" name="Department-ID" id="" pattern="[A-Za-z- ]+" required>
-                    <label for="Hire Date">Hire_Date</label>
+                    <input type="number" name="Department-ID" id="" pattern="[0-9]+" required>
+                    <label for="HireDate">Hire_Date</label>
                     <input type="date" name="Hire Date" id="" required>
 
                     <div style="margin: 0; margin-top: 30px;  display: flex; justify-content: space-around;">

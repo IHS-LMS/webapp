@@ -17,15 +17,15 @@
             <h1 style="margin-bottom: 720px;">Add Teacher ></h1>
             <h1>Add Teacher Addres ></h1>
         </section>
-        <form action="#" method="post">
+        <form name="Teacher" action="#" method="post" onsubmit="return formValidation();">
             <main id="main">
                 <div>
                     <label for="name">Name</label>
                     <input type="text" name="name" id="" pattern="[A-Za-z- ]+" required>
-                    <label for="Last Name">Last_Name</label>
+                    <label for="LastName">Last_Name</label>
                     <input type="text" name="Last Name" id="" pattern="[A-Za-z- ]+" required>
                     <label for="Gender">Gender</label>
-                    <select name="Gender" id="">
+                    <select name="Gender" id="" required>
                         <option value="Select">Select</option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
@@ -52,12 +52,12 @@
                         <option value="other">Other</option>
                     </select>
                     <label for="NID">Tazkira_Number</label>
-                    <input type="text" name="NID" id="" pattern="[0-9]+" required>
+                    <input type="number" name="NID" id="" pattern="[0-9]+" required>
                     <label for=" CellPhone"> Cell_Phone</label>
-                    <input type="text" name=" CellPhone" id="" pattern="[0-9]+" required>
+                    <input type="number" name=" CellPhone" id="" pattern="[0-9]+" required>
                     <label for="Email">Email</label>
                     <input type="email" name="Email" id="" required>
-                    <label for="Hire Date">Hire_Date</label>
+                    <label for="HireDate">Hire_Date</label>
                     <input type="date" name="Hire Date" id="" required>
                     <hr>
                     <label for=" Province"> Province</label>
@@ -90,7 +90,7 @@
                         <img src="" id="photo" alt="" class="photo" style=" margin-left: 0px; ">
                     </div>
                     <input type="file" onchange="loadFile(event)" name="photo" id="select-photo-button"
-                        value="Select Photo" style="outline: none;">
+                        value="Select Photo" style="outline: none;" required>
                 </div>
             </main>
         </form>
