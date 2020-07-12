@@ -17,17 +17,17 @@
             <h1>Add Exam's Course ></h1>
         </section>
         
-        <form action="#" method="post">
+        <form name="Exam_Timetable" action="#" method="post" onSubmit="return formValidation();">
             <main id="main">
                 <div>
                     <label for="Course_Name">Course_Name</label>
                     <input type="text" name="Course_Name" id="" pattern="[A-Za-z- ]+" required>
                     <label for="Teacher_Name">Teacher_Name</label>
                     <input type="text" name="Teacher_Name" id="" pattern="[A-Za-z- ]+" required>
-                    <label for="Exam Date">Exam_Date</label>
-                    <input type="date" name="Exam Date" id="" required>
-                    <label for="Time">Time</label>
-                    <input type="time" name="Time" id="" required>
+                    <label for="Exam_Date">Exam_Date</label>
+                    <input type="date" name="Exam_Date" id="" required>
+                    <label for="Exam_Time">Time</label>
+                    <input type="time" name="Exam_Time" id="" required>
 
                     <div style="margin: 0; margin-top: 30px;  display: flex; justify-content: space-around;">
                         <button type="submit" class="button-style">Save</button>
