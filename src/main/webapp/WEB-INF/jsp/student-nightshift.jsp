@@ -16,12 +16,12 @@
         <section>
             <h1>Add Night Shift Group ></h1>
         </section>
-        <form action="#" method="post" onSubmit="return ">
+        <form name="Student_Nightshift" action="#" method="post" onsubmit="return formValidation();">
             <main id="main">
                 <div>
                     <h2>Select Teacher</h2>
                     <br>
-                    <label for="teacher">Teacher_ID</label>
+                    <label for="teacher-id">Teacher_ID</label>
                     <input type="number" name="teacher-id" id="">
                     <hr>
                     <br>
@@ -53,8 +53,8 @@
                         <option value="Pharmacy">Pharmacy</option>
                         <option value="Laboratory">Laboratory</option>
                     </select>
-                    <label for="course">Course_ID</label>
-                    <input type="number" name="course" id="">
+                    <label for="course_ID">Course_ID</label>
+                    <input type="number" name="course_ID" id="">
                     <label for="date">Date</label>
                     <input type="date" ID="date" id="" required>
 

@@ -17,11 +17,11 @@
             <h1>Add Course ></h1>
         </section>
 
-        <form action="#" method="post">
+        <form name="Course" action="#" method="post" onSubmit="return formValidation();">
             <main id="main">
                 <div>
-                    <label for="name">Course_Name</label>
-                    <input type="text" name="name" id="" pattern="[A-Za-z- ]+" required>
+                    <label for="Course_Name">Course_Name</label>
+                    <input type="text" name="Course_Name" id="" pattern="[A-Za-z- ]+" required>
                     <label for="Teacher_Name">Teacher_Name</label>
                     <input type="text" name="Teacher_Name" id="" pattern="[A-Za-z- ]+">
                     <label for="Department">Department</label>
