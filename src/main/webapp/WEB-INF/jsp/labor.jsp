@@ -20,7 +20,7 @@
             <h1>Add Labor Address ></h1>
         </section>
 
-        <form action="#" method="post">
+        <form name="labor" action="#" method="post" onsubmit="return formValidation();">
 
             <main id="main">
 

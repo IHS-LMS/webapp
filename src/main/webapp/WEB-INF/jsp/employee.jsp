@@ -18,7 +18,7 @@
             <h1>Add Employee Address ></h1>
         </section>
 
-        <form action="#" method="post">
+        <form name="employee" action="#" method="post" onsubmit="return formValildation();">
             <main id="main">
                 <div>
                     <label for="name">Name</label>

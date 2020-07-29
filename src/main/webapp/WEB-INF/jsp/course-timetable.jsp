@@ -16,7 +16,7 @@
             <h1>Add Timetable ></h1>
         </section>
 
-        <form action="#" method="post">
+        <form name="course-timetable" action="#" method="post" onsubmit="return formValidation();">
             <main id="main">
                 <div>
                     <label for="Department_Course">Department_Course</label>
