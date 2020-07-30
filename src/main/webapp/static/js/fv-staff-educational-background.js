@@ -15,16 +15,15 @@ function formValidation() {
                     if (graduationDate.value == "" ? alert('Invalid graduationDate!') : true) {
                         if (checkFileExtension(transcript, 'Invalid photo Format!')) {
                             alert("Form Sucessfully Submitted!");
-                                window.location.reload();
-                                                                                        }
-                                                                                    }
-                                                                                }
-                                                                            }
-                                                                        }
-                                                                    }
-                        
-    return false;
-  }
+                            window.location.reload();
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 document.Staff_Educational_Background.onsubmit = function () {
     formValidation();
 }
+ 

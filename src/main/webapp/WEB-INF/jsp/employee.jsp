@@ -18,14 +18,14 @@
             <h1>Add Employee Address ></h1>
         </section>
 
-        <form action="#" method="post">
+        <form name="Employee_Admission" action="#" method="post" onsubmit="return formValidation();">
             <main id="main">
                 <div>
                     <label for="name">Name</label>
                     <input type="text" name="name" id="" pattern="[A-Za-z- ]+" required>
-                    <label for="Father Name">Last_Name</label>
-                    <!-- <input type="text" name="Last_name" id="" pattern="[A-Za-z- ]+" required>
-                    <label for="GrandFather Name">GrandFather_Name</label> -->
+                    <label for="LastName">Last_Name</label>
+                    <input type="text" name="Last_name" id="" pattern="[A-Za-z- ]+" required>
+                    <label for="GrandFatherName">GrandFather_Name</label>
                     <input type="text" name="GrandFather_Name" id="" pattern="[A-Za-z- ]+" required>
                     <label for="Gender">Gender</label>
                     <select name="Gender" id="">

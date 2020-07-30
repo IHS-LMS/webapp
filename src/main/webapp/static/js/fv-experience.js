@@ -15,16 +15,15 @@ function formValidation() {
                     if (allNumber(organizationCell, 'Invalid organization Phone Number!')) {
                         if (ValidateEmail(organizationEmail, 'You have entered an invalid email address!')) {
                             alert("Form Sucessfully Submitted!");
-                                window.location.reload();
-                                                                                        }
-                                                                                    }
-                                                                                }
-                                                                            }
-                                                                        }
-                                                                    }
-                        
-    return false;
-  }
+                            window.location.reload();
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 document.Experience.onsubmit = function () {
     formValidation();
 }
+  
