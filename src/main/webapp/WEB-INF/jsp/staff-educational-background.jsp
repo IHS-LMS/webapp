@@ -15,7 +15,7 @@
         <section>
             <h1>Add Educational Background ></h1>
         </section>
-        <form action="#" method="post">
+        <form name="Staff_Educational_Background" action="#" method="post" onsubmit="return formValidation();">
             <main id="main">
 
                 <div>
